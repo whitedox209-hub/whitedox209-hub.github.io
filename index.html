@@ -17,8 +17,8 @@
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
 <link rel="preload" href="fonts/RobotoFlex-100_1000-latin.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="fonts.css">
-<link rel="stylesheet" href="site.css?v=3.6">
-<script src="app.js?v=3.9" defer></script>
+<link rel="stylesheet" href="site.css?v=4.1">
+<script src="app.js?v=4.1" defer></script>
 </head>
 <body>
 <a class="skip" href="#work" data-i18n="skip">Skip to work</a>
@@ -72,7 +72,12 @@
   </section>
 
   <section class="about" id="about" aria-labelledby="ab-title">
-    <figure class="ab-photo"><img id="portrait" alt="Daria White" loading="lazy" width="1400" height="1800"></figure>
+    <figure class="ab-photo">
+      <video id="portrait" muted loop playsinline preload="none" aria-label="Daria White on set"></video>
+      <span class="ab-corners" aria-hidden="true"></span>
+      <span class="ab-rec" aria-hidden="true"><i></i>REC</span>
+      <figcaption>DARIA WHITE <span>· on set</span></figcaption>
+    </figure>
     <div class="ab-text">
       <h2 id="ab-title" class="label" data-i18n="abTitle">About</h2>
       <p class="ab-lead" id="ab-intro"></p>
@@ -108,14 +113,13 @@
 
 <nav class="dock" id="dock" aria-label="Quick contact"></nav>
 
-<dialog id="player" aria-labelledby="pl-title">
-  <button class="pl-close" aria-label="Close">✕</button>
-  <div class="pl-shell"><video id="pl-video" controls playsinline preload="metadata"></video></div>
-  <div class="pl-info">
-    <div><h2 id="pl-title"></h2><p id="pl-desc"></p></div>
-    <div class="pl-vars" id="pl-vars"></div>
-  </div>
-</dialog>
+<div class="reels" id="reels" hidden role="dialog" aria-modal="true" aria-label="Portfolio" tabindex="-1">
+  <div class="reels-track" id="reels-track"></div>
+  <button class="r-btn reels-close" id="reels-close" aria-label="Close"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></button>
+  <button class="r-btn reels-sound" id="reels-sound" aria-label="Sound on"><svg class="on" viewBox="0 0 24 24" width="22" height="22"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 010 7M19 6a8.5 8.5 0 010 12" stroke="currentColor" stroke-width="1.8" fill="none" stroke-linecap="round"/></svg><svg class="off" viewBox="0 0 24 24" width="22" height="22"><path d="M4 9h4l5-4v14l-5-4H4z" fill="currentColor"/><path d="M17 9l5 6M22 9l-5 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+  <div class="reels-nav"><button class="r-btn" id="reels-up" aria-label="Previous"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 15l6-6 6 6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></button><button class="r-btn" id="reels-down" aria-label="Next"><svg viewBox="0 0 24 24" width="22" height="22"><path d="M6 9l6 6 6-6" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg></button></div>
+  <div class="reels-hint" id="reels-hint" hidden><span>↑</span> Swipe</div>
+</div>
 <div id="load-error" hidden role="alert"></div>
 </body>
 </html>

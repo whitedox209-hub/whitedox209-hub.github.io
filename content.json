@@ -105,7 +105,9 @@
      "en": "Behind the frame"
     }
    }
-  ]
+  ],
+  "live": "media/daria-live.mp4",
+  "livePoster": "media/daria-live.jpg"
  },
  "contacts": {
   "telegram": "https://t.me/doxan4ikk",
@@ -270,7 +272,11 @@
       "en": "Bar film"
      },
      "excerpt": false,
-     "duration": 36.54
+     "duration": 36.54,
+     "orient": "v",
+     "dur": 36,
+     "preview": "media/pv/wedding-bar-lines.mp4",
+     "thumb": "media/pv/wedding-bar-lines.jpg"
     }
    ],
    "hidden": false,
@@ -307,7 +313,11 @@
       "ru": "Galaxy S25 Ultra"
      },
      "excerpt": false,
-     "duration": 31.8
+     "duration": 31.8,
+     "orient": "v",
+     "dur": 32,
+     "preview": "media/pv/samsung.mp4",
+     "thumb": "media/pv/samsung.jpg"
     },
     {
      "src": "media/hd/p17.mp4",
@@ -317,7 +327,11 @@
       "ru": "Galaxy Z Fold8"
      },
      "excerpt": false,
-     "duration": 21.01
+     "duration": 21.01,
+     "orient": "v",
+     "dur": 21,
+     "preview": "media/pv/samsung-2.mp4",
+     "thumb": "media/pv/samsung-2.jpg"
     }
    ],
    "hidden": false,
@@ -355,7 +369,11 @@
       "ru": "Cait"
      },
      "excerpt": false,
-     "duration": 15.12
+     "duration": 15.12,
+     "orient": "v",
+     "dur": 15,
+     "preview": "media/pv/on.mp4",
+     "thumb": "media/pv/on.jpg"
     },
     {
      "src": "media/hd/p05.mp4",
@@ -365,7 +383,11 @@
       "ru": "Trinity / 01"
      },
      "excerpt": false,
-     "duration": 17.07
+     "duration": 17.07,
+     "orient": "v",
+     "dur": 17,
+     "preview": "media/pv/on-2.mp4",
+     "thumb": "media/pv/on-2.jpg"
     },
     {
      "src": "media/hd/p06.mp4",
@@ -375,7 +397,11 @@
       "ru": "Trinity / 02"
      },
      "excerpt": false,
-     "duration": 15.6
+     "duration": 15.6,
+     "orient": "v",
+     "dur": 16,
+     "preview": "media/pv/on-3.mp4",
+     "thumb": "media/pv/on-3.jpg"
     }
    ],
    "hidden": false,
@@ -414,7 +440,11 @@
       "ru": "Уход / 02"
      },
      "excerpt": false,
-     "duration": 13.65
+     "duration": 13.65,
+     "orient": "v",
+     "dur": 14,
+     "preview": "media/pv/kiehls.mp4",
+     "thumb": "media/pv/kiehls.jpg"
     },
     {
      "src": "media/hd/p01.mp4",
@@ -424,7 +454,11 @@
       "ru": "Уход / 01"
      },
      "excerpt": false,
-     "duration": 10.34
+     "duration": 10.34,
+     "orient": "v",
+     "dur": 10,
+     "preview": "media/pv/kiehls-2.mp4",
+     "thumb": "media/pv/kiehls-2.jpg"
     },
     {
      "src": "media/hd/p03.mp4",
@@ -434,7 +468,11 @@
       "ru": "Kiehl’s × Milk"
      },
      "excerpt": false,
-     "duration": 67.12
+     "duration": 67.12,
+     "orient": "v",
+     "dur": 67,
+     "preview": "media/pv/kiehls-3.mp4",
+     "thumb": "media/pv/kiehls-3.jpg"
     }
    ],
    "hidden": false,
@@ -473,7 +511,11 @@
       "en": "Story 01"
      },
      "excerpt": false,
-     "duration": 8.27
+     "duration": 8.27,
+     "orient": "v",
+     "dur": 8,
+     "preview": "media/pv/guerlain.mp4",
+     "thumb": "media/pv/guerlain.jpg"
     },
     {
      "src": "media/hd/p33.mp4",
@@ -483,7 +525,11 @@
       "en": "Story 02"
      },
      "excerpt": false,
-     "duration": 10.08
+     "duration": 10.08,
+     "orient": "v",
+     "dur": 10,
+     "preview": "media/pv/guerlain-2.mp4",
+     "thumb": "media/pv/guerlain-2.jpg"
     }
    ],
    "hidden": false,
@@ -521,7 +567,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 32.95
+     "duration": 32.95,
+     "orient": "v",
+     "dur": 33,
+     "preview": "media/pv/adobe.mp4",
+     "thumb": "media/pv/adobe.jpg"
     }
    ],
    "hidden": false,
@@ -558,7 +608,11 @@
       "ru": "Faith"
      },
      "excerpt": false,
-     "duration": 22.77
+     "duration": 22.77,
+     "orient": "v",
+     "dur": 23,
+     "preview": "media/pv/stretch.mp4",
+     "thumb": "media/pv/stretch.jpg"
     },
     {
      "src": "media/hd/p07.mp4",
@@ -568,7 +622,11 @@
       "ru": "Albina"
      },
      "excerpt": false,
-     "duration": 18.44
+     "duration": 18.44,
+     "orient": "v",
+     "dur": 18,
+     "preview": "media/pv/stretch-2.mp4",
+     "thumb": "media/pv/stretch-2.jpg"
     },
     {
      "src": "media/hd/p09.mp4",
@@ -578,7 +636,11 @@
       "ru": "Trinity"
      },
      "excerpt": false,
-     "duration": 20.69
+     "duration": 20.69,
+     "orient": "v",
+     "dur": 21,
+     "preview": "media/pv/stretch-3.mp4",
+     "thumb": "media/pv/stretch-3.jpg"
     }
    ],
    "hidden": false,
@@ -617,7 +679,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 11.26
+     "duration": 11.26,
+     "orient": "v",
+     "dur": 11,
+     "preview": "media/pv/lancome.mp4",
+     "thumb": "media/pv/lancome.jpg"
     }
    ],
    "hidden": false,
@@ -654,7 +720,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 62.66
+     "duration": 62.66,
+     "orient": "v",
+     "dur": 63,
+     "preview": "media/pv/dell.mp4",
+     "thumb": "media/pv/dell.jpg"
     }
    ],
    "hidden": false,
@@ -691,7 +761,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 47.32
+     "duration": 47.32,
+     "orient": "h",
+     "dur": 47,
+     "preview": "media/pv/neuro.mp4",
+     "thumb": "media/pv/neuro.jpg"
     }
    ],
    "hidden": false,
@@ -728,7 +802,11 @@
       "ru": "Короткий ролик"
      },
      "excerpt": false,
-     "duration": 41.56
+     "duration": 41.56,
+     "orient": "h",
+     "dur": 42,
+     "preview": "media/pv/silicon.mp4",
+     "thumb": "media/pv/silicon.jpg"
     },
     {
      "src": "media/p13.mp4",
@@ -738,7 +816,11 @@
       "ru": "Промо"
      },
      "excerpt": false,
-     "duration": 81.66
+     "duration": 81.66,
+     "orient": "h",
+     "dur": 82,
+     "preview": "media/pv/silicon-2.mp4",
+     "thumb": "media/pv/silicon-2.jpg"
     }
    ],
    "hidden": false,
@@ -776,7 +858,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 14.71
+     "duration": 14.71,
+     "orient": "h",
+     "dur": 15,
+     "preview": "media/pv/newyork.mp4",
+     "thumb": "media/pv/newyork.jpg"
     }
    ],
    "hidden": false,
@@ -813,7 +899,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 45.61
+     "duration": 45.61,
+     "orient": "v",
+     "dur": 46,
+     "preview": "media/pv/vanessa.mp4",
+     "thumb": "media/pv/vanessa.jpg"
     }
    ],
    "hidden": false,
@@ -850,7 +940,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 44.72
+     "duration": 44.72,
+     "orient": "v",
+     "dur": 45,
+     "preview": "media/pv/stretchhouse.mp4",
+     "thumb": "media/pv/stretchhouse.jpg"
     }
    ],
    "hidden": false,
@@ -887,7 +981,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 26.43
+     "duration": 26.43,
+     "orient": "v",
+     "dur": 26,
+     "preview": "media/pv/svetilo.mp4",
+     "thumb": "media/pv/svetilo.jpg"
     }
    ],
    "hidden": false,
@@ -924,7 +1022,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 24.08
+     "duration": 24.08,
+     "orient": "h",
+     "dur": 24,
+     "preview": "media/pv/slovo.mp4",
+     "thumb": "media/pv/slovo.jpg"
     }
    ],
    "hidden": false,
@@ -961,7 +1063,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 29.92
+     "duration": 29.92,
+     "orient": "v",
+     "dur": 30,
+     "preview": "media/pv/trash.mp4",
+     "thumb": "media/pv/trash.jpg"
     }
    ],
    "hidden": false,
@@ -998,7 +1104,11 @@
       "ru": "Корпоративное событие"
      },
      "excerpt": true,
-     "duration": 264.2
+     "duration": 264.2,
+     "orient": "h",
+     "dur": 60,
+     "preview": "media/pv/alfaro.mp4",
+     "thumb": "media/pv/alfaro.jpg"
     },
     {
      "src": "media/p29.mp4",
@@ -1008,7 +1118,11 @@
       "ru": "Семинар"
      },
      "excerpt": false,
-     "duration": 157.8
+     "duration": 157.8,
+     "orient": "h",
+     "dur": 158,
+     "preview": "media/pv/alfaro-2.mp4",
+     "thumb": "media/pv/alfaro-2.jpg"
     }
    ],
    "hidden": false,
@@ -1046,7 +1160,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 175.07999999999998
+     "duration": 175.07999999999998,
+     "orient": "h",
+     "dur": 175,
+     "preview": "media/pv/joy.mp4",
+     "thumb": "media/pv/joy.jpg"
     }
    ],
    "hidden": false,
@@ -1083,7 +1201,11 @@
       "ru": "Видео"
      },
      "excerpt": false,
-     "duration": 62.6
+     "duration": 62.6,
+     "orient": "h",
+     "dur": 63,
+     "preview": "media/pv/dream.mp4",
+     "thumb": "media/pv/dream.jpg"
     }
    ],
    "hidden": false,
@@ -1120,7 +1242,11 @@
       "ru": "Короткий ролик"
      },
      "excerpt": false,
-     "duration": 92.36
+     "duration": 92.36,
+     "orient": "h",
+     "dur": 92,
+     "preview": "media/pv/gio.mp4",
+     "thumb": "media/pv/gio.jpg"
     },
     {
      "src": "media/p21.mp4",
@@ -1130,7 +1256,11 @@
       "ru": "Фрагмент фильма"
      },
      "excerpt": true,
-     "duration": 896.6
+     "duration": 896.6,
+     "orient": "h",
+     "dur": 60,
+     "preview": "media/pv/gio-2.mp4",
+     "thumb": "media/pv/gio-2.jpg"
     }
    ],
    "hidden": false,
@@ -1168,7 +1298,11 @@
       "ru": "Короткий ролик"
      },
      "excerpt": false,
-     "duration": 61.16
+     "duration": 61.16,
+     "orient": "h",
+     "dur": 61,
+     "preview": "media/pv/kostya.mp4",
+     "thumb": "media/pv/kostya.jpg"
     },
     {
      "src": "media/p19.mp4",
@@ -1178,7 +1312,11 @@
       "ru": "Фрагмент фильма"
      },
      "excerpt": true,
-     "duration": 704.08
+     "duration": 704.08,
+     "orient": "h",
+     "dur": 60,
+     "preview": "media/pv/kostya-2.mp4",
+     "thumb": "media/pv/kostya-2.jpg"
     }
    ],
    "hidden": false,
