@@ -177,6 +177,45 @@ html.reels-on,html.reels-on body{overflow:hidden}
 @media (hover:none),(pointer:coarse){.reels-nav{display:none}}
 @media (max-aspect-ratio:3/4){.slide.v video{width:100%;height:100%}.slide.v .slide-info{left:0;width:auto;right:0;transform:none}}
 
+/* reels: Instagram-like action column */
+.r-actions{position:absolute;right:10px;bottom:calc(96px + env(safe-area-inset-bottom));z-index:3;display:flex;flex-direction:column;gap:18px;align-items:center}
+.r-act{display:flex;flex-direction:column;align-items:center;gap:4px;color:#fff;font-size:11px;font-weight:600;text-shadow:0 1px 6px rgba(0,0,0,.5)}
+.r-act svg{filter:drop-shadow(0 1px 6px rgba(0,0,0,.45));transition:transform .2s}
+.r-act:active svg{transform:scale(.85)}
+#r-like path{fill:transparent;transition:fill .2s,stroke .2s}
+#r-like.on path{fill:var(--ember);stroke:var(--ember)}
+#r-like.on svg{animation:pop .35s}
+@keyframes pop{50%{transform:scale(1.25)}}
+.heart-burst{position:absolute;left:50%;top:50%;z-index:4;color:#fff;pointer-events:none;opacity:0;transform:translate(-50%,-50%) scale(.4);filter:drop-shadow(0 6px 24px rgba(0,0,0,.4))}
+.heart-burst.go{animation:burst .9s cubic-bezier(.2,.8,.2,1)}
+@keyframes burst{15%{opacity:1;transform:translate(-50%,-50%) scale(1.1)}30%{transform:translate(-50%,-50%) scale(.95)}70%{opacity:1;transform:translate(-50%,-50%) scale(1)}100%{opacity:0;transform:translate(-50%,-80%) scale(.9)}}
+@media (min-aspect-ratio:3/4){.r-actions{right:calc(50% - min(50vw,calc(100vh*9/32)) - 64px)}}
+
+/* "Send to Daria" bottom sheet */
+.sheet-shade{position:absolute;inset:0;z-index:5;background:rgba(0,0,0,.45);opacity:0;transition:opacity .25s}
+.sheet-shade.up{opacity:1}
+.sheet{position:absolute;left:0;right:0;bottom:0;z-index:6;margin:0 auto;max-width:520px;background:#161412;color:var(--bone);border-radius:18px 18px 0 0;
+  padding:8px 18px calc(18px + env(safe-area-inset-bottom));transform:translateY(105%);transition:transform .3s cubic-bezier(.2,.8,.2,1);box-shadow:0 -10px 40px rgba(0,0,0,.4)}
+.sheet.up{transform:none}
+.sheet-grip{width:38px;height:4px;border-radius:2px;background:rgba(243,236,224,.25);margin:4px auto 10px}
+.sheet-head{display:flex;justify-content:space-between;align-items:center}
+.sheet-head h3{margin:0;font-size:17px;font-weight:700}
+.sheet-x{width:32px;height:32px;border-radius:50%;background:rgba(243,236,224,.08);font-size:13px}
+.sheet-item{display:flex;gap:12px;align-items:center;margin:14px 0 12px}
+.sheet-item img{width:44px;height:58px;object-fit:cover;border-radius:6px;background:#000}
+.sheet-item b{display:block;font-size:14px}.sheet-item span{font-size:13px;color:var(--ash)}
+.sheet-quick{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:10px}
+.qchip{font-size:13px;line-height:1.25;text-align:left;padding:8px 12px;border-radius:14px;border:1px solid rgba(243,236,224,.18);background:transparent;color:var(--bone)}
+.qchip[aria-pressed="true"]{background:var(--bone);color:var(--ink);border-color:var(--bone)}
+.sheet textarea{width:100%;resize:none;border-radius:12px;border:1px solid rgba(243,236,224,.15);background:#0f0e0c;color:var(--bone);font:inherit;font-size:15px;padding:10px 12px}
+.sheet textarea:focus{outline:1px solid var(--ember);border-color:transparent}
+.sheet-likes{display:flex;gap:8px;align-items:center;font-size:13px;color:var(--ash);margin:10px 0 2px}
+.sheet-likes[hidden]{display:none}
+.sheet-ch{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;margin-top:12px}
+.ch{height:46px;border-radius:12px;font-size:15px;font-weight:600;background:var(--bone);color:var(--ink)}
+.ch-wa{background:#25d366;color:#06240f}.ch-tg{background:#2aabee;color:#fff}.ch-ig{background:linear-gradient(45deg,#f58529,#dd2a7b,#8134af);color:#fff}
+.sheet-note{font-size:13px;color:var(--sand);margin:10px 0 0}
+
 /* about: live portrait in a viewfinder */
 .ab-photo{position:relative;justify-self:start;width:min(100%,440px)}
 .ab-photo video{width:100%;aspect-ratio:9/16;object-fit:cover;border-radius:3px;background:var(--ink-2);display:block}

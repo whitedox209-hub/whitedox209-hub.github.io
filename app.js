@@ -5,6 +5,10 @@ const I18N = {
   workTitle:'Selected work',clients:'Brands in the portfolio',svTitle:'What we make',abTitle:'About',
   bts:'Behind the scenes on Instagram',ctLabel:'New project?',ctBig:'Let’s talk',ftr:'Video & AI production · Phuket',top:'Back to top ↑',
   all:'All',brand:'Brands',event:'Events',wedding:'Weddings',story:'Stories',film:'film',films:'films',
+  like:'Like',send:'Send',share:'Share',sendTitle:'Send to Daria',copied:'Link copied',
+  quick:['Wow! Let’s make something like this.','I want this style for my brand.','Love this one — tell me more about it.'],
+  sheetPh:'Your message…',withLikes:'Add my other ♥ ({n})',alsoLiked:'I also liked:',mailSubj:'Portfolio',
+  tgNote:'Opening Telegram. If the text doesn’t appear, it’s copied — just paste it.',igNote:'Text copied — paste it into the Instagram chat that opens.',
   play:'Play',write:'Write',reel:'Showreel 2026',excerpt:'60-second excerpt.',loadError:'The portfolio could not load. Please refresh the page.',
   statement:[['We make '],['chip','samsung'],[' brand films, '],['chip','on'],[' social content and '],['chip','adobe'],[' AI-built shots for brands, hotels and couples — with the precision of global campaigns. '],['em','From Phuket, for the world.']]},
  ru:{skip:'К работам',navWork:'Работы',navAbout:'Обо мне',navContact:'Контакты',
@@ -12,6 +16,10 @@ const I18N = {
   workTitle:'Избранные работы',clients:'Бренды в портфолио',svTitle:'Что мы делаем',abTitle:'Обо мне',
   bts:'Закулисье в Instagram',ctLabel:'Новый проект?',ctBig:'Обсудим',ftr:'Видео и ИИ-продакшен · Пхукет',top:'Наверх ↑',
   all:'Все',brand:'Бренды',event:'События',wedding:'Свадьбы',story:'Истории',film:'видео',films:'видео',
+  like:'Нравится',send:'Даше',share:'Поделиться',sendTitle:'Отправить Даше',copied:'Ссылка скопирована',
+  quick:['Вау! Давай сделаем что-то похожее.','Хочу такой стиль для своего бренда.','Очень нравится — расскажи подробнее про это видео.'],
+  sheetPh:'Ваше сообщение…',withLikes:'Добавить другие ♥ ({n})',alsoLiked:'Ещё мне понравилось:',mailSubj:'Портфолио',
+  tgNote:'Открываю Telegram. Если текст не подставился — он скопирован, просто вставьте.',igNote:'Текст скопирован — вставьте его в открывшийся чат Instagram.',
   play:'Смотреть',write:'Написать',reel:'Шоурил 2026',excerpt:'Фрагмент 60 секунд.',loadError:'Не удалось загрузить портфолио. Обновите страницу.',
   statement:[['Снимаем '],['chip','samsung'],[' ролики для брендов, '],['chip','on'],[' контент для соцсетей и '],['chip','adobe'],[' кадры с ИИ — для брендов, отелей и пар, с точностью мировых кампаний. '],['em','С Пхукета — для всего мира.']]}
 };
@@ -194,7 +202,12 @@ function openReels(feed,start,trigger){
   const bg=el('div','slide-bg');bg.style.backgroundImage=`url("${safe(it.v.thumb||it.p.poster)}")`;
   const v=el('video');v.playsInline=true;v.loop=true;v.preload='none';v.poster=safe(it.v.thumb||it.p.poster);v.dataset.src=safe(it.v.src);
   v.addEventListener('timeupdate',()=>{if(v.duration)s.style.setProperty('--prog',(v.currentTime/v.duration).toFixed(4))});
-  v.addEventListener('click',()=>{if(v.paused){v.play().catch(()=>{});s.classList.remove('paused')}else{v.pause();s.classList.add('paused')}});
+  // single tap = pause/play, double tap = like (like Instagram)
+  let tapT=0;
+  v.addEventListener('click',()=>{
+   if(tapT){clearTimeout(tapT);tapT=0;likeCurrent(true);return}
+   tapT=setTimeout(()=>{tapT=0;if(v.paused){v.play().catch(()=>{});s.classList.remove('paused')}else{v.pause();s.classList.add('paused')}},240);
+  });
   const info=el('div','slide-info');
   const who=el('div','slide-who');who.append(el('span','slide-av','DW'),el('b',null,it.p.brand));
   info.append(who,el('p',null,it.p===REELP?t('heroBase'):subtitle(it)),el('i',null,it.p===REELP?'':`${t(it.p.category)} · ${fmtOf(it)}`));
@@ -220,8 +233,8 @@ function activate(i){
    v.play().catch(()=>{rMuted=true;v.muted=true;syncSound();v.play().catch(()=>{})})}
   else if(!v.paused)v.pause();
  });
- syncSound();
- const it=rFeed[i];if(it&&it.p!==REELP){const u=new URL(location.href);u.searchParams.set('project',it.p.id);history.replaceState(history.state,'',u)}
+ syncSound();syncLike();
+ const it=rFeed[i];if(it&&it.p!==REELP){const u=new URL(location.href);u.searchParams.set('project',it.p.id);it.i?u.searchParams.set('i',it.i+1):u.searchParams.delete('i');history.replaceState(history.state,'',u)}
  if(i>0)try{localStorage.setItem('dw-swiped','1')}catch{}
 }
 function syncSound(){const b=$('#reels-sound');b.classList.toggle('off',rMuted);b.setAttribute('aria-label',rMuted?'Sound off':'Sound on')}
@@ -230,7 +243,8 @@ function closeReels(fromPop){
  if(!rOpen)return;rOpen=false;
  $$('#reels-track video').forEach(v=>{v.pause();v.removeAttribute('src');v.load()});
  rObs?.disconnect();RT.replaceChildren();RV.hidden=true;document.documentElement.classList.remove('reels-on');
- const u=new URL(location.href);u.searchParams.delete('project');history.replaceState(null,'',u);
+ closeSheet();
+ const u=new URL(location.href);u.searchParams.delete('project');u.searchParams.delete('i');history.replaceState(null,'',u);
  if(!fromPop&&history.state?.reels)history.back();
  tryPlay();opener?.focus({preventScroll:true});
 }
@@ -238,12 +252,74 @@ $('#reels-close').onclick=()=>closeReels(false);
 addEventListener('popstate',()=>{if(rOpen)closeReels(true)});
 const step=d=>{const n=Math.max(0,Math.min(rFeed.length-1,rIdx+d));RT.scrollTo({top:n*RT.clientHeight,behavior:'smooth'})};
 $('#reels-up').onclick=()=>step(-1);$('#reels-down').onclick=()=>step(1);
-RV.addEventListener('keydown',e=>{if(e.key==='Escape')closeReels(false);else if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();step(1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();step(-1)}else if(e.key===' '){e.preventDefault();$$('#reels-track video')[rIdx]?.click()}});
+RV.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA')return;if(e.key==='Escape'){if(!$('#sheet').hidden)closeSheet();else closeReels(false)}else if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();step(1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();step(-1)}else if(e.key===' '){e.preventDefault();$$('#reels-track video')[rIdx]?.click()}});
 function allFeed(){return layout(itemsFor('all')).map(([it])=>it)}
-function openProject(id,trigger){
+function openProject(id,trigger,vi=0){
  if(id==='__reel')return openReels([reelItem(),...allFeed()],0,trigger);
- const f=allFeed();const k=f.findIndex(it=>it.p.id===id);if(k>=0)openReels(f,k,trigger);
+ const f=allFeed();let k=f.findIndex(it=>it.p.id===id&&it.i===vi);if(k<0)k=f.findIndex(it=>it.p.id===id);if(k>=0)openReels(f,k,trigger);
 }
+
+/* ---------- likes (kept in this browser only — no public counters) ---------- */
+const keyOf=it=>it.p.id+'#'+it.i;
+let likes=(()=>{try{return JSON.parse(localStorage.getItem('dw-likes')||'[]')}catch{return[]}})();
+const saveLikes=()=>{try{localStorage.setItem('dw-likes',JSON.stringify(likes))}catch{}};
+function syncLike(){const it=rFeed[rIdx];const on=!!it&&likes.includes(keyOf(it));const b=$('#r-like');b.classList.toggle('on',on);b.setAttribute('aria-pressed',String(on))}
+function likeCurrent(fromDouble){
+ const it=rFeed[rIdx];if(!it)return;const k=keyOf(it);const has=likes.includes(k);
+ if(fromDouble){if(!has){likes.push(k)}}else likes=has?likes.filter(x=>x!==k):[...likes,k];
+ saveLikes();syncLike();
+ if(fromDouble||!has){const h=$('#heart-burst');h.classList.remove('go');void h.offsetWidth;h.classList.add('go')}
+}
+$('#r-like').onclick=()=>likeCurrent(false);
+
+/* ---------- "Send to Daria" sheet ---------- */
+const linkOf=it=>{const u=new URL(location.origin+location.pathname);if(it.p===REELP){u.hash='top'}else{u.searchParams.set('project',it.p.id);if(it.i)u.searchParams.set('i',it.i+1)}if(lang==='ru')u.searchParams.set('lang','ru');return u.href};
+const titleOf=it=>it.p===REELP?`DARIA WHITE — ${t('reel')}`:`${it.p.brand} — ${subtitle(it)}`;
+let quickPick=0;
+function openSheet(){
+ const it=rFeed[rIdx];if(!it)return;
+ const v=$$('#reels-track video')[rIdx];v?.pause();
+ $('#sheet-thumb').src=safe(it.v.thumb||it.p.poster);$('#sheet-brand').textContent=it.p.brand;$('#sheet-sub').textContent=it.p===REELP?t('reel'):subtitle(it);
+ const q=$('#sheet-quick');q.replaceChildren();
+ t('quick').forEach((txt,i)=>{const b=el('button','qchip',txt);b.setAttribute('aria-pressed',String(i===quickPick));b.onclick=()=>{quickPick=i;$('#sheet-text').value=txt;$$('#sheet-quick .qchip').forEach((x,j)=>x.setAttribute('aria-pressed',String(j===i)))};q.append(b)});
+ $('#sheet-text').value=t('quick')[quickPick];$('#sheet-text').placeholder=t('sheetPh');
+ const others=likes.filter(k=>k!==keyOf(it));
+ $('#sheet-likes-wrap').hidden=!others.length;$('#sheet-likes-label').textContent=t('withLikes').replace('{n}',others.length);
+ const ch=$('#sheet-ch');ch.replaceChildren();
+ const c=data.contacts;
+ [['WhatsApp',c.whatsapp&&'wa'],['Telegram',c.telegram&&'tg'],['Email',c.email&&'mail'],['Instagram',c.instagram&&'ig']].filter(x=>x[1]).forEach(([label,kind])=>{
+  const b=el('button','ch ch-'+kind,label);b.onclick=()=>sendVia(kind);ch.append(b);
+ });
+ $('#sheet-note').hidden=true;
+ $('#sheet').hidden=false;$('#sheet-shade').hidden=false;requestAnimationFrame(()=>{$('#sheet').classList.add('up');$('#sheet-shade').classList.add('up')});
+}
+function closeSheet(){const s=$('#sheet');if(s.hidden)return;s.classList.remove('up');$('#sheet-shade').classList.remove('up');setTimeout(()=>{s.hidden=true;$('#sheet-shade').hidden=true},250);
+ const v=$$('#reels-track video')[rIdx];if(v&&rOpen)v.play().catch(()=>{})}
+function messageText(){
+ const it=rFeed[rIdx];let m=$('#sheet-text').value.trim()||t('quick')[0];
+ m+=`\n\n▶ ${titleOf(it)}\n${linkOf(it)}`;
+ if($('#sheet-likes').checked&&!$('#sheet-likes-wrap').hidden){
+  const all=allFeed();const extra=likes.filter(k=>k!==keyOf(it)).map(k=>all.find(x=>keyOf(x)===k)).filter(Boolean);
+  if(extra.length)m+=`\n\n${t('alsoLiked')}\n`+extra.map(x=>`♥ ${titleOf(x)} — ${linkOf(x)}`).join('\n');
+ }
+ return m;
+}
+async function copyText(s){try{await navigator.clipboard.writeText(s);return true}catch{const ta=el('textarea');ta.value=s;document.body.append(ta);ta.select();let ok=false;try{ok=document.execCommand('copy')}catch{}ta.remove();return ok}}
+async function sendVia(kind){
+ const m=messageText(),c=data.contacts,enc=encodeURIComponent(m);
+ if(kind==='wa'){const base=c.whatsapp.split('?')[0];window.open(`${base}?text=${enc}`,'_blank','noopener')}
+ else if(kind==='tg'){const user=c.telegram.replace(/\/+$/,'').split('/').pop();await copyText(m);window.open(`https://t.me/${user}?text=${enc}`,'_blank','noopener');note(t('tgNote'))}
+ else if(kind==='mail'){location.href=`mailto:${c.email}?subject=${encodeURIComponent(t('mailSubj')+' — '+titleOf(rFeed[rIdx]))}&body=${enc}`}
+ else if(kind==='ig'){await copyText(m);const user=c.instagram.replace(/\/+$/,'').split('/').pop();note(t('igNote'));setTimeout(()=>window.open(`https://ig.me/m/${user}`,'_blank','noopener'),900)}
+}
+function note(s){const n=$('#sheet-note');n.textContent=s;n.hidden=false}
+$('#r-send').onclick=openSheet;
+$('#sheet-x').onclick=closeSheet;$('#sheet-shade').onclick=closeSheet;
+$('#r-share').onclick=async()=>{
+ const it=rFeed[rIdx];if(!it)return;const url=linkOf(it);
+ if(navigator.share){try{await navigator.share({title:titleOf(it),text:titleOf(it),url})}catch{}}
+ else{await copyText(url);const b=$('#r-share span');const old=b.textContent;b.textContent=t('copied');setTimeout(()=>b.textContent=old,1600)}
+};
 $('#watch-reel').onclick=e=>{e.stopPropagation();openProject('__reel',e.currentTarget)};
 $('#hero-frame').onclick=e=>{if(!e.target.closest('button'))openProject('__reel',$('#watch-reel'))};
 $$('#quick button').forEach(b=>b.onclick=e=>{e.stopPropagation();cat=b.dataset.go;if(data){renderFilters();renderGrid()}
@@ -329,6 +405,6 @@ addEventListener('pointermove',e=>{mouse.x=e.clientX;mouse.y=e.clientY},{passive
 heroVideo();renderBrands();applyLang();onScroll();requestAnimationFrame(vfFrame);
 fetch('content.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
  data=d;applyLang();
- const pid=params.get('project');if(pid)openProject(pid);
+ const pid=params.get('project');if(pid)openProject(pid,null,Math.max(0,(+params.get('i')||1)-1));
  if(['#work','#about','#contact'].includes(location.hash))requestAnimationFrame(()=>$(location.hash)?.scrollIntoView({behavior:'instant'}));
 }).catch(()=>{const e=$('#load-error');e.textContent=t('loadError');e.hidden=false});
