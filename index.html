@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0a09">
+<title>DARIA WHITE — Video & AI production · Phuket</title>
+<meta name="description" content="Daria White — brand-level video and AI production. Based in Phuket, Thailand, available worldwide. Brand films, social content, hotels, events and weddings.">
+<meta property="og:title" content="DARIA WHITE — Video & AI production">
+<meta property="og:description" content="Brand-level video & AI production. Based in Phuket, Thailand · available worldwide.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://whitedox209-hub.github.io/media/og-cover.jpg">
+<meta property="og:url" content="https://whitedox209-hub.github.io/">
+<link rel="canonical" href="https://whitedox209-hub.github.io/">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="preload" href="fonts/RobotoFlex-100_1000-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="fonts.css">
+<link rel="stylesheet" href="site.css?v=3.4">
+<script src="app.js?v=3.5" defer></script>
+</head>
+<body>
+<a class="skip" href="#work" data-i18n="skip">Skip to work</a>
+
+<header class="hdr" id="hdr">
+  <a class="logo" href="#top">DARIA WHITE</a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="#work" data-i18n="navWork">Work</a>
+    <a href="#about" data-i18n="navAbout">About</a>
+    <a href="#contact" data-i18n="navContact">Contact</a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language"><button data-lang="en" aria-pressed="true">EN</button><button data-lang="ru" aria-pressed="false">RU</button></div>
+  <button class="burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="nav"><span></span><span></span></button>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero" aria-label="Showreel">
+    <div class="hero-stick">
+      <div class="hero-name" aria-hidden="true"><span class="vf-word" data-word="DARIA">DARIA</span><span class="vf-word" data-word="WHITE">WHITE</span></div>
+      <div class="hero-frame" id="hero-frame" data-cursor="play">
+        <video class="hero-video" id="hero-video" muted loop playsinline autoplay preload="auto" aria-hidden="true"></video>
+        <div class="hero-foot">
+          <div><p class="hero-line"><span data-i18n="heroLine">Video & AI production</span><br><span class="dim" data-i18n="heroBase">Phuket, Thailand — worldwide</span></p>
+          <div class="quick" id="quick"><button data-go="brand" data-i18n="brand">Brands</button><button data-go="wedding" data-i18n="wedding">Weddings</button><button data-go="event" data-i18n="event">Events</button></div></div>
+          <button class="reel-btn" id="watch-reel"><span class="reel-dot" aria-hidden="true"></span><span data-i18n="watchReel">Showreel with sound</span></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="intro" aria-label="Intro">
+    <p class="statement" id="statement"></p>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="work-head">
+      <h2 id="work-title" data-i18n="workTitle">Selected work</h2>
+      <div class="filters" id="filters" role="group" aria-label="Categories"></div>
+    </div>
+    <div class="grid" id="grid" aria-live="polite"></div>
+  </section>
+
+  <section class="clients" aria-label="Clients">
+    <p class="label" data-i18n="clients">Brands in the portfolio</p>
+    <div class="marquee"><div class="marquee-track" id="brand-track"></div></div>
+  </section>
+
+  <section class="services" aria-labelledby="sv-title">
+    <h2 id="sv-title" class="label" data-i18n="svTitle">What we make</h2>
+    <ul class="sv" id="sv"></ul>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="ab-title">
+    <figure class="ab-photo"><img id="portrait" alt="Daria White" loading="lazy" width="1400" height="1800"></figure>
+    <div class="ab-text">
+      <h2 id="ab-title" class="label" data-i18n="abTitle">About</h2>
+      <p class="ab-lead" id="ab-intro"></p>
+      <p id="ab-body"></p>
+      <p id="ab-detail"></p>
+      <a class="tlink" id="ig-link" target="_blank" rel="noopener" data-i18n="bts">Behind the scenes on Instagram</a>
+    </div>
+  </section>
+
+  <section class="bts-wrap" aria-label="Behind the scenes">
+    <div class="bts" id="bts" tabindex="0"></div>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="ct-title">
+    <p class="label" data-i18n="ctLabel">New project?</p>
+    <h2 id="ct-title"><a id="ct-big" class="vf-word" target="_blank" rel="noopener" data-cursor="write">Let’s talk</a></h2>
+    <div class="ct-links" id="ct-links"></div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="ftr-mark vf-word" data-word="DARIA WHITE" aria-hidden="true">DARIA WHITE</div>
+  <div class="ftr-row"><span>© <span id="year"></span></span><span data-i18n="ftr">Video & AI production · Phuket</span><a href="#top" data-i18n="top">Back to top ↑</a></div>
+</footer>
+
+<div class="intro-curtain" id="curtain" aria-hidden="true">
+  <div class="ic-top"></div><div class="ic-bot"></div>
+  <div class="ic-center">
+    <div class="ic-rec"><span class="ic-dot"></span>REC <span id="ic-tc">00:00:00:00</span></div>
+    <div class="ic-name"><span>D</span><span>A</span><span>R</span><span>I</span><span>A</span><span class="sp"> </span><span>W</span><span>H</span><span>I</span><span>T</span><span>E</span></div>
+  </div>
+</div>
+
+<nav class="dock" id="dock" aria-label="Quick contact"></nav>
+
+<dialog id="player" aria-labelledby="pl-title">
+  <button class="pl-close" aria-label="Close">✕</button>
+  <div class="pl-shell"><video id="pl-video" controls playsinline preload="metadata"></video></div>
+  <div class="pl-info">
+    <div><h2 id="pl-title"></h2><p id="pl-desc"></p></div>
+    <div class="pl-vars" id="pl-vars"></div>
+  </div>
+</dialog>
+<div id="load-error" hidden role="alert"></div>
+</body>
+</html>

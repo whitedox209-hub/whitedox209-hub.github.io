@@ -1,0 +1,1197 @@
+{
+ "version": 1,
+ "sourceUrl": "https://disk.yandex.ru/d/DcUzc4OP6qcTIQ",
+ "about": {
+  "intro": {
+   "en": "I’m Daria White — a videographer based in Phuket, with my own team of editors and AI behind every project.",
+   "ru": "Я Даша Белая — видеограф с базой на Пхукете, со своей командой монтажёров и ИИ в каждом проекте."
+  },
+  "body": {
+   "en": "My work began with wedding stories. Today I focus on commercial films, brand content and projects for international audiences.",
+   "ru": "Мой путь начался со свадебных историй. Сегодня мой фокус — коммерческие видео, контент для брендов и проекты для зарубежного рынка."
+  },
+  "detail": {
+   "en": "I’m a perfectionist about the things you feel: the image, the rhythm, the colour, the sound. Every detail should belong to the same story. I also teach filmmaking and editing.",
+   "ru": "Я перфекционист в том, что вы чувствуете: в изображении, ритме, цвете и звуке. Каждая деталь должна работать на одну историю. Ещё я обучаю съёмке и монтажу."
+  },
+  "portrait": "media/daria-12.webp",
+  "candid": "media/daria-165.webp",
+  "moments": [
+   {
+    "src": "media/bts-new-01.mp4",
+    "poster": "media/bts-new-01.jpg",
+    "label": {
+     "ru": "На высоте",
+     "en": "On higher ground"
+    }
+   },
+   {
+    "src": "media/bts-new-06.mp4",
+    "poster": "media/bts-new-06.jpg",
+    "label": {
+     "ru": "В поиске ракурса",
+     "en": "Finding the angle"
+    }
+   },
+   {
+    "src": "media/bts-new-18.mp4",
+    "poster": "media/bts-new-18.jpg",
+    "label": {
+     "ru": "Свет и характер",
+     "en": "Light and character"
+    }
+   },
+   {
+    "src": "media/bts-new-00.mp4",
+    "poster": "media/bts-new-00.jpg",
+    "label": {
+     "ru": "Истории в пути",
+     "en": "Stories on the road"
+    }
+   },
+   {
+    "src": "media/bts-new-03.mp4",
+    "poster": "media/bts-new-03.jpg",
+    "label": {
+     "ru": "За пределами студии",
+     "en": "Beyond the studio"
+    }
+   },
+   {
+    "src": "media/bts-new-08.mp4",
+    "poster": "media/bts-new-08.jpg",
+    "label": {
+     "ru": "В движении",
+     "en": "In motion"
+    }
+   },
+   {
+    "src": "media/bts-new-15.mp4",
+    "poster": "media/bts-new-15.jpg",
+    "label": {
+     "ru": "Ближе к кадру",
+     "en": "Closer to the frame"
+    }
+   },
+   {
+    "src": "media/daria-9.mp4",
+    "poster": "media/daria-9.jpg",
+    "label": {
+     "ru": "В своём ритме",
+     "en": "In my element"
+    }
+   },
+   {
+    "src": "media/daria-63.mp4",
+    "poster": "media/daria-63.jpg",
+    "label": {
+     "ru": "Всегда в движении",
+     "en": "Always in motion"
+    }
+   },
+   {
+    "src": "media/daria-155.mp4",
+    "poster": "media/daria-155.jpg",
+    "label": {
+     "ru": "Внимание к деталям",
+     "en": "An eye for detail"
+    }
+   },
+   {
+    "src": "media/daria-159.mp4",
+    "poster": "media/daria-159.jpg",
+    "label": {
+     "ru": "За кадром",
+     "en": "Behind the frame"
+    }
+   }
+  ]
+ },
+ "contacts": {
+  "telegram": "https://t.me/doxan4ikk",
+  "instagram": "https://www.instagram.com/doxan4ik/",
+  "email": "whitedox209@gmail.com",
+  "extra": [],
+  "whatsapp": "https://wa.me/79604924211?text=Hi%20Daria!%20I%20saw%20your%20portfolio%20and%20would%20like%20to%20discuss%20a%20project."
+ },
+ "copy": {
+  "en": {
+   "skip": "Skip to work",
+   "navWork": "Work",
+   "navAbout": "About",
+   "navContact": "Contact",
+   "talk": "Let’s talk",
+   "heroEyebrow": "DARIA WHITE / CREATIVE PRODUCTION",
+   "heroSide": "A personal vision.<br>International projects.",
+   "heroFilm": "EVERY FRAME. A FEELING.",
+   "heroCopy": "Films that feel<br>like your brand.",
+   "pauseMotion": "Pause motion",
+   "playMotion": "Play motion",
+   "explore": "EXPLORE THE WORK",
+   "chapterWork": "01 / THE WORK",
+   "workNote": "Different brands. Different worlds.<br>One attention to detail.",
+   "workTitle": "Made to <em>move you.</em>",
+   "moreWork": "All stories",
+   "brandsTitle": "BRANDS I’VE WORKED WITH",
+   "chapterAbout": "02 / THE PERSON BEHIND THE FRAME",
+   "aboutTitle": "A sharp eye.<br>A restless <em>mind.</em>",
+   "behindScenes": "Behind the scenes on Instagram",
+   "manifesto": "Good enough?<br><em>Not my final cut.</em>",
+   "manifestoSide": "AN EYE FOR EVERY DETAIL.<br>A FEELING IN EVERY FRAME.",
+   "chapterServices": "03 / WHAT WE CAN CREATE",
+   "servicesTitle": "Your idea.<br><em>Our next story.</em>",
+   "service1": "Commercial films",
+   "service1Copy": "Brand stories, product films and campaigns. A clear idea, a distinct visual language and a film that feels like your brand.",
+   "service2": "Social-first content",
+   "service2Copy": "Vertical films and short formats with their own rhythm. Content designed to catch the eye and hold attention.",
+   "service3": "Creative production",
+   "service3Copy": "A personal creative vision backed by a team. We bring image, rhythm, colour and sound together into one coherent story.",
+   "service4": "Mentoring",
+   "service4Copy": "Practical training in filmmaking and editing. Write to me to discuss your level, goals and a format that fits you.",
+   "mentoringLink": "Discuss mentoring",
+   "chapterContact": "04 / LET’S MAKE SOMETHING",
+   "contactSide": "YOUR NEXT PROJECT STARTS HERE.",
+   "contactTitle": "Have a vision?<br><em>Let’s make it real.</em>",
+   "contactCopy": "Tell me about your brand, your idea<br>and what you want people to feel.",
+   "contactButton": "Start a conversation",
+   "footerNote": "MADE WITH INTENTION.",
+   "original": "View source files on Yandex Disk",
+   "all": "All work",
+   "brand": "Brands",
+   "event": "Events",
+   "story": "Stories",
+   "wedding": "Weddings",
+   "film": "film",
+   "films": "films",
+   "close": "Close project",
+   "watch": "Watch",
+   "excerpt": "A 60-second excerpt. The full film is available in the source folder.",
+   "playerError": "This video could not load. Please open the source folder below.",
+   "loadError": "The portfolio could not load. Please refresh the page or contact Daria on Telegram.",
+   "language": "Language",
+   "categories": "Project categories",
+   "personalSignature": "DARIA WHITE / THE PERSON BEHIND THE FRAME",
+   "btsTitle": "Life <em>between takes.</em>",
+   "btsNote": "Real moments on set, in the studio and on the road.",
+   "btsPause": "Pause",
+   "btsPlay": "Play videos",
+   "btsPrevious": "Previous",
+   "btsNext": "Next",
+   "brandsHint": "A name. A character. A story.",
+   "brandsFoot": "DIFFERENT WORLDS. ONE VISION."
+  },
+  "ru": {
+   "skip": "Перейти к работам",
+   "navWork": "Работы",
+   "navAbout": "Обо мне",
+   "navContact": "Контакты",
+   "talk": "Обсудим?",
+   "heroEyebrow": "DARIA WHITE / CREATIVE PRODUCTION",
+   "heroSide": "Авторский взгляд.<br>Международные проекты.",
+   "heroFilm": "В КАЖДОМ КАДРЕ — ЧУВСТВО.",
+   "heroCopy": "Видео, в которых<br>чувствуется ваш бренд.",
+   "pauseMotion": "Остановить движение",
+   "playMotion": "Включить движение",
+   "explore": "СМОТРЕТЬ РАБОТЫ",
+   "chapterWork": "01 / РАБОТЫ",
+   "workNote": "Разные бренды. Разные миры.<br>Одно внимание к деталям.",
+   "workTitle": "Чтобы <em>почувствовать.</em>",
+   "moreWork": "Все истории",
+   "brandsTitle": "БРЕНДЫ, С КОТОРЫМИ Я РАБОТАЛА",
+   "chapterAbout": "02 / ПО ТУ СТОРОНУ КАДРА",
+   "aboutTitle": "Чувствовать.<br>Видеть. <em>Создавать.</em>",
+   "behindScenes": "За кадром — в Instagram",
+   "manifesto": "Просто хорошо?<br><em>Можно ещё точнее.</em>",
+   "manifestoSide": "ВНИМАНИЕ К КАЖДОЙ ДЕТАЛИ.<br>ЧУВСТВО В КАЖДОМ КАДРЕ.",
+   "chapterServices": "03 / ЧТО МЫ МОЖЕМ СОЗДАТЬ",
+   "servicesTitle": "Ваша идея.<br><em>Наша новая история.</em>",
+   "service1": "Коммерческие видео",
+   "service1Copy": "Истории брендов, продуктовые ролики и рекламные кампании. Ясная идея, свой визуальный язык и видео, в котором узнаётся ваш бренд.",
+   "service2": "Контент для соцсетей",
+   "service2Copy": "Вертикальные видео и короткие форматы со своим ритмом. Контент, который привлекает взгляд и удерживает внимание.",
+   "service3": "Креативный продакшен",
+   "service3Copy": "Авторский взгляд и команда, которая помогает его воплотить. Соединяем изображение, ритм, цвет и звук в цельную историю.",
+   "service4": "Обучение",
+   "service4Copy": "Практическое обучение съёмке и монтажу. Напишите мне: обсудим ваш опыт, цели и подходящий формат занятий.",
+   "mentoringLink": "Обсудить обучение",
+   "chapterContact": "04 / СОЗДАДИМ ЧТО-ТО ВМЕСТЕ",
+   "contactSide": "ВАШ НОВЫЙ ПРОЕКТ НАЧИНАЕТСЯ ЗДЕСЬ.",
+   "contactTitle": "Есть идея?<br><em>Дадим ей жизнь.</em>",
+   "contactCopy": "Расскажите о бренде, вашей идее<br>и эмоции, которую хочется передать.",
+   "contactButton": "Обсудить проект",
+   "footerNote": "СОЗДАНО СО СМЫСЛОМ.",
+   "original": "Открыть оригиналы на Яндекс Диске",
+   "all": "Все работы",
+   "brand": "Бренды",
+   "event": "События",
+   "story": "Истории",
+   "wedding": "Свадьбы",
+   "film": "видео",
+   "films": "видео",
+   "close": "Закрыть проект",
+   "watch": "Смотреть",
+   "excerpt": "Фрагмент длительностью 60 секунд. Полный фильм доступен в папке с оригиналами.",
+   "playerError": "Видео не загрузилось. Откройте папку с оригиналами по ссылке ниже.",
+   "loadError": "Не удалось загрузить портфолио. Обновите страницу или напишите Даше в Telegram.",
+   "language": "Язык",
+   "categories": "Категории проектов",
+   "personalSignature": "ДАША БЕЛАЯ / DARIA WHITE",
+   "btsTitle": "Немного <em>закулисья.</em>",
+   "btsNote": "Живые моменты с площадок, из студии и путешествий.",
+   "btsPause": "Пауза",
+   "btsPlay": "Включить видео",
+   "btsPrevious": "Назад",
+   "btsNext": "Дальше",
+   "brandsHint": "Имя. Характер. История.",
+   "brandsFoot": "РАЗНЫЕ БРЕНДЫ. АВТОРСКИЙ ВЗГЛЯД."
+  }
+ },
+ "projects": [
+  {
+   "id": "wedding-bar-lines",
+   "brand": "WEDDING BAR LINES",
+   "title": {
+    "ru": "Атмосфера в деталях.",
+    "en": "A taste of the moment."
+   },
+   "category": "brand",
+   "description": {
+    "ru": "Коктейли, детали и атмосфера Wedding Bar Lines.",
+    "en": "Cocktails, details and the atmosphere of Wedding Bar Lines."
+   },
+   "poster": "media/pv/wedding-bar-lines.jpg",
+   "preview": "media/pv/wedding-bar-lines.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p34.mp4",
+     "poster": "media/p34.jpg",
+     "label": {
+      "ru": "Бар",
+      "en": "Bar film"
+     },
+     "excerpt": false,
+     "duration": 36.54
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     36
+    ]
+   }
+  },
+  {
+   "id": "samsung",
+   "brand": "SAMSUNG",
+   "title": {
+    "en": "Galaxy. A different perspective.",
+    "ru": "Galaxy. Другой взгляд."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Galaxy S25 Ultra and Galaxy Z Fold8. A series of films with Yifan.",
+    "ru": "Galaxy S25 Ultra и Galaxy Z Fold8. Серия роликов с Yifan."
+   },
+   "poster": "media/pv/samsung.jpg",
+   "preview": "media/pv/samsung.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p16.mp4",
+     "poster": "media/p16.jpg",
+     "label": {
+      "en": "Galaxy S25 Ultra",
+      "ru": "Galaxy S25 Ultra"
+     },
+     "excerpt": false,
+     "duration": 31.8
+    },
+    {
+     "src": "media/hd/p17.mp4",
+     "poster": "media/p17.jpg",
+     "label": {
+      "en": "Galaxy Z Fold8",
+      "ru": "Galaxy Z Fold8"
+     },
+     "excerpt": false,
+     "duration": 21.01
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     32,
+     21
+    ]
+   }
+  },
+  {
+   "id": "on",
+   "brand": "ON",
+   "title": {
+    "en": "Movement, in every form.",
+    "ru": "Движение в каждом кадре."
+   },
+   "category": "brand",
+   "description": {
+    "en": "A series of short films with Cait and Trinity.",
+    "ru": "Серия коротких роликов с Cait и Trinity."
+   },
+   "poster": "media/pv/on.jpg",
+   "preview": "media/pv/on.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p04.mp4",
+     "poster": "media/p04.jpg",
+     "label": {
+      "en": "Cait",
+      "ru": "Cait"
+     },
+     "excerpt": false,
+     "duration": 15.12
+    },
+    {
+     "src": "media/hd/p05.mp4",
+     "poster": "media/p05.jpg",
+     "label": {
+      "en": "Trinity / 01",
+      "ru": "Trinity / 01"
+     },
+     "excerpt": false,
+     "duration": 17.07
+    },
+    {
+     "src": "media/hd/p06.mp4",
+     "poster": "media/p06.jpg",
+     "label": {
+      "en": "Trinity / 02",
+      "ru": "Trinity / 02"
+     },
+     "excerpt": false,
+     "duration": 15.6
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     15,
+     17,
+     16
+    ]
+   }
+  },
+  {
+   "id": "kiehls",
+   "brand": "KIEHL’S",
+   "title": {
+    "en": "A little care. A lot of character.",
+    "ru": "Забота с характером."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Skincare stories and the Kiehl’s × Milk collaboration.",
+    "ru": "Истории об уходе и коллаборация Kiehl’s × Milk."
+   },
+   "poster": "media/pv/kiehls.jpg",
+   "preview": "media/pv/kiehls.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p02.mp4",
+     "poster": "media/p02.jpg",
+     "label": {
+      "en": "Skincare / 02",
+      "ru": "Уход / 02"
+     },
+     "excerpt": false,
+     "duration": 13.65
+    },
+    {
+     "src": "media/hd/p01.mp4",
+     "poster": "media/p01.jpg",
+     "label": {
+      "en": "Skincare / 01",
+      "ru": "Уход / 01"
+     },
+     "excerpt": false,
+     "duration": 10.34
+    },
+    {
+     "src": "media/hd/p03.mp4",
+     "poster": "media/p03.jpg",
+     "label": {
+      "en": "Kiehl’s × Milk",
+      "ru": "Kiehl’s × Milk"
+     },
+     "excerpt": false,
+     "duration": 67.12
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     14,
+     10,
+     67
+    ]
+   }
+  },
+  {
+   "id": "guerlain",
+   "brand": "GUERLAIN",
+   "title": {
+    "ru": "Цвет с характером.",
+    "en": "Colour with character."
+   },
+   "category": "brand",
+   "description": {
+    "ru": "Две истории для GUERLAIN.",
+    "en": "Two films for GUERLAIN."
+   },
+   "poster": "media/pv/guerlain.jpg",
+   "preview": "media/pv/guerlain.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p32.mp4",
+     "poster": "media/p32.jpg",
+     "label": {
+      "ru": "История 01",
+      "en": "Story 01"
+     },
+     "excerpt": false,
+     "duration": 8.27
+    },
+    {
+     "src": "media/hd/p33.mp4",
+     "poster": "media/p33.jpg",
+     "label": {
+      "ru": "История 02",
+      "en": "Story 02"
+     },
+     "excerpt": false,
+     "duration": 10.08
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     8,
+     10
+    ]
+   }
+  },
+  {
+   "id": "adobe",
+   "brand": "ADOBE",
+   "title": {
+    "en": "In the creative flow.",
+    "ru": "В потоке творчества."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Adobe × Yifan.",
+    "ru": "Adobe × Yifan."
+   },
+   "poster": "media/pv/adobe.jpg",
+   "preview": "media/pv/adobe.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p10.mp4",
+     "poster": "media/p10.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 32.95
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     33
+    ]
+   }
+  },
+  {
+   "id": "stretch",
+   "brand": "STRETCH YOUR STORY",
+   "title": {
+    "en": "Wear your own story.",
+    "ru": "У каждой — своя история."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Three stories with Faith, Albina and Trinity.",
+    "ru": "Три истории с Faith, Albina и Trinity."
+   },
+   "poster": "media/pv/stretch.jpg",
+   "preview": "media/pv/stretch.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p08.mp4",
+     "poster": "media/p08.jpg",
+     "label": {
+      "en": "Faith",
+      "ru": "Faith"
+     },
+     "excerpt": false,
+     "duration": 22.77
+    },
+    {
+     "src": "media/hd/p07.mp4",
+     "poster": "media/p07.jpg",
+     "label": {
+      "en": "Albina",
+      "ru": "Albina"
+     },
+     "excerpt": false,
+     "duration": 18.44
+    },
+    {
+     "src": "media/hd/p09.mp4",
+     "poster": "media/p09.jpg",
+     "label": {
+      "en": "Trinity",
+      "ru": "Trinity"
+     },
+     "excerpt": false,
+     "duration": 20.69
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     23,
+     18,
+     21
+    ]
+   }
+  },
+  {
+   "id": "lancome",
+   "brand": "LANCÔME",
+   "title": {
+    "en": "Beauty in the details.",
+    "ru": "Красота в деталях."
+   },
+   "category": "brand",
+   "description": {
+    "en": "A short beauty film.",
+    "ru": "Короткая история о красоте."
+   },
+   "poster": "media/pv/lancome.jpg",
+   "preview": "media/pv/lancome.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p11.mp4",
+     "poster": "media/p11.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 11.26
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     11
+    ]
+   }
+  },
+  {
+   "id": "dell",
+   "brand": "DELL",
+   "title": {
+    "en": "Ideas in motion.",
+    "ru": "Идеи в движении."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Dell × Yifan.",
+    "ru": "Dell × Yifan."
+   },
+   "poster": "media/pv/dell.jpg",
+   "preview": "media/pv/dell.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p18.mp4",
+     "poster": "media/p18.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 62.66
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     63
+    ]
+   }
+  },
+  {
+   "id": "neuro",
+   "brand": "NEURO SYSTEM GROUP",
+   "title": {
+    "en": "Automall.",
+    "ru": "Автомолл."
+   },
+   "category": "brand",
+   "description": {
+    "en": "Commercial project for Neuro System Group.",
+    "ru": "Коммерческий проект для Neuro System Group."
+   },
+   "poster": "media/pv/neuro.jpg",
+   "preview": "media/pv/neuro.mp4",
+   "videos": [
+    {
+     "src": "media/p23.mp4",
+     "poster": "media/p23.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 47.32
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     47
+    ]
+   }
+  },
+  {
+   "id": "silicon",
+   "brand": "SILICON VALLEY 1440",
+   "title": {
+    "en": "People. Ideas. Connection.",
+    "ru": "Люди. Идеи. Связи."
+   },
+   "category": "event",
+   "description": {
+    "en": "Two promo films from the Silicon Valley 1440 project.",
+    "ru": "Два проморолика проекта Silicon Valley 1440."
+   },
+   "poster": "media/pv/silicon.jpg",
+   "preview": "media/pv/silicon.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p14.mp4",
+     "poster": "media/p14.jpg",
+     "label": {
+      "en": "Short film",
+      "ru": "Короткий ролик"
+     },
+     "excerpt": false,
+     "duration": 41.56
+    },
+    {
+     "src": "media/p13.mp4",
+     "poster": "media/p13.jpg",
+     "label": {
+      "en": "Promo",
+      "ru": "Промо"
+     },
+     "excerpt": false,
+     "duration": 81.66
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     42,
+     82
+    ]
+   }
+  },
+  {
+   "id": "newyork",
+   "brand": "NEW YORK",
+   "title": {
+    "en": "A city with its own rhythm.",
+    "ru": "Город со своим ритмом."
+   },
+   "category": "story",
+   "description": {
+    "en": "A brief portrait of New York.",
+    "ru": "Короткий портрет Нью-Йорка."
+   },
+   "poster": "media/pv/newyork.jpg",
+   "preview": "media/pv/newyork.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p12.mp4",
+     "poster": "media/p12.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 14.71
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     15
+    ]
+   }
+  },
+  {
+   "id": "vanessa",
+   "brand": "VANESSA",
+   "title": {
+    "en": "The art of a personal mark.",
+    "ru": "Искусство оставлять след."
+   },
+   "category": "brand",
+   "description": {
+    "en": "A film about a tattoo artist and her work.",
+    "ru": "История тату-мастера и её работы."
+   },
+   "poster": "media/pv/vanessa.jpg",
+   "preview": "media/pv/vanessa.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p15.mp4",
+     "poster": "media/p15.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 45.61
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     46
+    ]
+   }
+  },
+  {
+   "id": "stretchhouse",
+   "brand": "STRETCH HOUSE",
+   "title": {
+    "en": "A new beginning.",
+    "ru": "Новое начало."
+   },
+   "category": "event",
+   "description": {
+    "en": "A film from the studio opening.",
+    "ru": "Ролик с открытия студии."
+   },
+   "poster": "media/pv/stretchhouse.jpg",
+   "preview": "media/pv/stretchhouse.mp4",
+   "videos": [
+    {
+     "src": "media/p24.mp4",
+     "poster": "media/p24.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 44.72
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     45
+    ]
+   }
+  },
+  {
+   "id": "svetilo",
+   "brand": "SVETILO",
+   "title": {
+    "en": "Alice in Wonderland.",
+    "ru": "Алиса в стране чудес."
+   },
+   "category": "event",
+   "description": {
+    "en": "An Alice in Wonderland themed event.",
+    "ru": "Событие в атмосфере «Алисы в стране чудес»."
+   },
+   "poster": "media/pv/svetilo.jpg",
+   "preview": "media/pv/svetilo.mp4",
+   "videos": [
+    {
+     "src": "media/p25.mp4",
+     "poster": "media/p25.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 26.43
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     26
+    ]
+   }
+  },
+  {
+   "id": "slovo",
+   "brand": "СЛОВО ЖИЗНИ",
+   "title": {
+    "en": "The energy of music.",
+    "ru": "Энергия музыки."
+   },
+   "category": "event",
+   "description": {
+    "en": "A music-led event film.",
+    "ru": "Музыкальный ролик с события."
+   },
+   "poster": "media/pv/slovo.jpg",
+   "preview": "media/pv/slovo.mp4",
+   "videos": [
+    {
+     "src": "media/p26.mp4",
+     "poster": "media/p26.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 24.08
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     24
+    ]
+   }
+  },
+  {
+   "id": "trash",
+   "brand": "TRASH CAN",
+   "title": {
+    "en": "Design for everyday life.",
+    "ru": "Дизайн повседневной жизни."
+   },
+   "category": "brand",
+   "description": {
+    "en": "A product film: details, materials and everyday use.",
+    "ru": "Продуктовый ролик: детали, материалы и повседневное использование."
+   },
+   "poster": "media/pv/trash.jpg",
+   "preview": "media/pv/trash.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p27.mp4",
+     "poster": "media/p27.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 29.92
+    }
+   ],
+   "hidden": false,
+   "orient": "v",
+   "meta": {
+    "ratios": [
+     "9:16"
+    ],
+    "durs": [
+     30
+    ]
+   }
+  },
+  {
+   "id": "alfaro",
+   "brand": "АЛЬФАРО",
+   "title": {
+    "en": "People behind the company.",
+    "ru": "Люди, которые создают компанию."
+   },
+   "category": "event",
+   "description": {
+    "en": "A corporate event and a seminar: two films for Alfaro.",
+    "ru": "Корпоративное событие и семинар: два ролика для Альфаро."
+   },
+   "poster": "media/pv/alfaro.jpg",
+   "preview": "media/pv/alfaro.mp4",
+   "videos": [
+    {
+     "src": "media/p28.mp4",
+     "poster": "media/p28.jpg",
+     "label": {
+      "en": "Corporate event",
+      "ru": "Корпоративное событие"
+     },
+     "excerpt": true,
+     "duration": 264.2
+    },
+    {
+     "src": "media/p29.mp4",
+     "poster": "media/p29.jpg",
+     "label": {
+      "en": "Seminar",
+      "ru": "Семинар"
+     },
+     "excerpt": false,
+     "duration": 157.8
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     60,
+     158
+    ]
+   }
+  },
+  {
+   "id": "joy",
+   "brand": "РАДУЮСЬ В БОГЕ",
+   "title": {
+    "en": "A story told through music.",
+    "ru": "История на языке музыки."
+   },
+   "category": "story",
+   "description": {
+    "en": "A children’s music video.",
+    "ru": "Детский музыкальный клип."
+   },
+   "poster": "media/pv/joy.jpg",
+   "preview": "media/pv/joy.mp4",
+   "videos": [
+    {
+     "src": "media/p30.mp4",
+     "poster": "media/p30.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 175.07999999999998
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     175
+    ]
+   }
+  },
+  {
+   "id": "dream",
+   "brand": "МЕЧТАЙ",
+   "title": {
+    "en": "The start of something bigger.",
+    "ru": "Начало чего-то большего."
+   },
+   "category": "event",
+   "description": {
+    "en": "A conference teaser.",
+    "ru": "Тизер конференции."
+   },
+   "poster": "media/pv/dream.jpg",
+   "preview": "media/pv/dream.mp4",
+   "videos": [
+    {
+     "src": "media/p31.mp4",
+     "poster": "media/p31.jpg",
+     "label": {
+      "en": "Film",
+      "ru": "Видео"
+     },
+     "excerpt": false,
+     "duration": 62.6
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     63
+    ]
+   }
+  },
+  {
+   "id": "gio",
+   "brand": "GIO & MARIAM",
+   "title": {
+    "en": "A day to remember.",
+    "ru": "День, который остаётся."
+   },
+   "category": "wedding",
+   "description": {
+    "en": "A wedding story. Short film and a feature excerpt.",
+    "ru": "Свадебная история. Короткий ролик и фрагмент фильма."
+   },
+   "poster": "media/pv/gio.jpg",
+   "preview": "media/pv/gio.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p20.mp4",
+     "poster": "media/p20.jpg",
+     "label": {
+      "en": "Short film",
+      "ru": "Короткий ролик"
+     },
+     "excerpt": false,
+     "duration": 92.36
+    },
+    {
+     "src": "media/p21.mp4",
+     "poster": "media/p21.jpg",
+     "label": {
+      "en": "Feature excerpt",
+      "ru": "Фрагмент фильма"
+     },
+     "excerpt": true,
+     "duration": 896.6
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     92,
+     60
+    ]
+   }
+  },
+  {
+   "id": "kostya",
+   "brand": "KOSTYA & KSENIA",
+   "title": {
+    "en": "Everything that matters.",
+    "ru": "Всё, что важно."
+   },
+   "category": "wedding",
+   "description": {
+    "en": "A wedding story. Short film and a feature excerpt.",
+    "ru": "Свадебная история. Короткий ролик и фрагмент фильма."
+   },
+   "poster": "media/pv/kostya.jpg",
+   "preview": "media/pv/kostya.mp4",
+   "videos": [
+    {
+     "src": "media/hd/p22.mp4",
+     "poster": "media/p22.jpg",
+     "label": {
+      "en": "Short film",
+      "ru": "Короткий ролик"
+     },
+     "excerpt": false,
+     "duration": 61.16
+    },
+    {
+     "src": "media/p19.mp4",
+     "poster": "media/p19.jpg",
+     "label": {
+      "en": "Feature excerpt",
+      "ru": "Фрагмент фильма"
+     },
+     "excerpt": true,
+     "duration": 704.08
+    }
+   ],
+   "hidden": false,
+   "orient": "h",
+   "meta": {
+    "ratios": [
+     "16:9"
+    ],
+    "durs": [
+     61,
+     60
+    ]
+   }
+  }
+ ]
+}
