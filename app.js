@@ -160,6 +160,7 @@ function renderGrid(){
   card.append(cover,cap);box.append(card);
  });
  observe();lazyVideos();
+ if(typeof touchUI!=='undefined'&&touchUI)setTimeout(updateFocus,50);
 }
 
 /* autoplay any [data-src] video only while it is on screen */
@@ -241,6 +242,25 @@ function onScroll(){
  const v=$('#hero-video');if(y>hero.offsetHeight&&!v.paused)v.pause();else if(y<hero.offsetHeight&&v.paused)tryPlay();
 }
 addEventListener('scroll',onScroll,{passive:true});
+
+/* touch screens: whichever work card sits nearest the middle of the screen is in focus */
+const touchUI=matchMedia('(hover:none),(pointer:coarse)').matches;
+let focusRaf=0;
+function updateFocus(){
+ focusRaf=0;
+ const grid=$('#grid');if(!grid)return;
+ const cards=$$('#grid .card');if(!cards.length)return;
+ const gr=grid.getBoundingClientRect();
+ const active=gr.top<innerHeight*.75&&gr.bottom>innerHeight*.25;
+ grid.classList.toggle('scrollfocus',active);
+ if(!active){cards.forEach(c=>c.classList.remove('focus'));return}
+ // focus the whole row nearest the middle of the screen (side-by-side cards share it)
+ const mid=innerHeight/2;
+ const ds=cards.map(c=>{const r=c.querySelector('.cover').getBoundingClientRect();return Math.abs((r.top+r.bottom)/2-mid)});
+ const bd=Math.min(...ds);
+ cards.forEach((c,i)=>c.classList.toggle('focus',ds[i]<=bd+40));
+}
+if(touchUI){addEventListener('scroll',()=>{if(!focusRaf)focusRaf=setTimeout(updateFocus,60)},{passive:true});addEventListener('resize',updateFocus,{passive:true})}
 addEventListener('resize',()=>{heroVideo();onScroll()},{passive:true});
 $('#burger').onclick=()=>{const o=$('#burger').getAttribute('aria-expanded')==='true';$('#burger').setAttribute('aria-expanded',String(!o));$('#nav').classList.toggle('open',!o)};
 $$('#nav a').forEach(a=>a.addEventListener('click',()=>{$('#nav').classList.remove('open');$('#burger').setAttribute('aria-expanded','false')}));
