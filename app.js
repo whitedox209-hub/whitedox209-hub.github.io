@@ -210,7 +210,9 @@ function contactList(){
 function renderContacts(){
  const list=contactList(),box=$('#ct-links'),dock=$('#dock');box.replaceChildren();dock.replaceChildren();
  list.forEach(([label,url])=>{const a=el('a',null,label+' ↗');a.href=safe(url);a.target='_blank';a.rel='noopener';box.append(a)});
- list.slice(0,2).forEach(([label,url])=>{const a=el('a',null,label);a.href=safe(url);a.target='_blank';a.rel='noopener';dock.append(a)});
+ // phone dock: Telegram + Instagram (Daria's choice); fall back to the first two contacts
+ const dockList=list.filter(([l])=>l==='Telegram'||l==='Instagram');
+ (dockList.length?dockList:list.slice(0,2)).forEach(([label,url])=>{const a=el('a',null,label);a.href=safe(url);a.target='_blank';a.rel='noopener';dock.append(a)});
  if(list[0])$('#ct-big').href=safe(list[0][1]);
  $('#ig-link').href=safe(data.contacts.instagram||'#');
 }
