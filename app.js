@@ -211,7 +211,18 @@ function openReels(feed,start,trigger){
   const info=el('div','slide-info');
   const who=el('div','slide-who');who.append(el('span','slide-av','DW'),el('b',null,it.p.brand));
   info.append(who,el('p',null,it.p===REELP?t('heroBase'):subtitle(it)),el('i',null,it.p===REELP?'':`${t(it.p.category)} · ${fmtOf(it)}`));
-  s.append(bg,v,info,el('div','slide-bar'),el('div','slide-pause'));
+  // scrubbable progress bar (drag or tap, like Instagram)
+  const bar=el('div','slide-bar');bar.setAttribute('role','slider');bar.setAttribute('aria-label','Seek');bar.tabIndex=-1;
+  const tip=el('span','slide-time');bar.append(tip);
+  let drag=false,wasPlaying=false;
+  const seekTo=e=>{const r=bar.getBoundingClientRect();const k=Math.min(1,Math.max(0,(e.clientX-r.left)/r.width));
+   if(v.duration){v.currentTime=k*v.duration;s.style.setProperty('--prog',k.toFixed(4));tip.textContent=mmss(Math.round(k*v.duration))+' / '+mmss(Math.round(v.duration))}};
+  bar.addEventListener('pointerdown',e=>{e.preventDefault();e.stopPropagation();drag=true;wasPlaying=!v.paused;v.pause();s.classList.add('scrub');bar.setPointerCapture(e.pointerId);seekTo(e)});
+  bar.addEventListener('pointermove',e=>{if(drag)seekTo(e)});
+  const end=e=>{if(!drag)return;drag=false;s.classList.remove('scrub');if(wasPlaying)v.play().catch(()=>{})};
+  bar.addEventListener('pointerup',end);bar.addEventListener('pointercancel',end);
+  bar.addEventListener('click',e=>e.stopPropagation());
+  s.append(bg,v,info,bar,el('div','slide-pause'));
   return s;
  }));
  RV.hidden=false;document.documentElement.classList.add('reels-on');rOpen=true;
@@ -252,7 +263,8 @@ $('#reels-close').onclick=()=>closeReels(false);
 addEventListener('popstate',()=>{if(rOpen)closeReels(true)});
 const step=d=>{const n=Math.max(0,Math.min(rFeed.length-1,rIdx+d));RT.scrollTo({top:n*RT.clientHeight,behavior:'smooth'})};
 $('#reels-up').onclick=()=>step(-1);$('#reels-down').onclick=()=>step(1);
-RV.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA')return;if(e.key==='Escape'){if(!$('#sheet').hidden)closeSheet();else closeReels(false)}else if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();step(1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();step(-1)}else if(e.key===' '){e.preventDefault();$$('#reels-track video')[rIdx]?.click()}});
+RV.addEventListener('keydown',e=>{if(e.target.tagName==='TEXTAREA')return;if(e.key==='Escape'){if(!$('#sheet').hidden)closeSheet();else closeReels(false)}else if(e.key==='ArrowDown'||e.key==='PageDown'){e.preventDefault();step(1)}else if(e.key==='ArrowUp'||e.key==='PageUp'){e.preventDefault();step(-1)}else if(e.key===' '){e.preventDefault();$$('#reels-track video')[rIdx]?.click()}
+ else if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const v=$$('#reels-track video')[rIdx];if(v&&v.duration)v.currentTime=Math.min(v.duration-.1,Math.max(0,v.currentTime+(e.key==='ArrowRight'?5:-5)))}});
 function allFeed(){return layout(itemsFor('all')).map(([it])=>it)}
 function openProject(id,trigger,vi=0){
  if(id==='__reel')return openReels([reelItem(),...allFeed()],0,trigger);

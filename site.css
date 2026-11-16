@@ -159,8 +159,17 @@ html.reels-on,html.reels-on body{overflow:hidden}
 .slide-av{width:32px;height:32px;border-radius:50%;background:var(--bone);color:var(--ink);display:grid;place-items:center;font-size:11px;font-weight:800;letter-spacing:.02em}
 .slide-info p{margin:8px 0 2px;font-size:15px;line-height:1.35;color:rgba(255,255,255,.92)}
 .slide-info i{font-style:normal;font-size:12px;color:rgba(255,255,255,.6)}
-.slide-bar{position:absolute;left:0;right:0;bottom:0;height:2px;background:rgba(255,255,255,.18)}
-.slide-bar::after{content:"";position:absolute;inset:0;background:#fff;transform-origin:left;transform:scaleX(var(--prog,0))}
+/* progress bar: thin line, big invisible touch area, thickens while scrubbing */
+.slide-bar{position:absolute;left:0;right:0;bottom:env(safe-area-inset-bottom);height:28px;z-index:3;cursor:pointer;touch-action:none}
+.slide-bar::before{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:rgba(255,255,255,.22);transition:height .15s}
+.slide-bar::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:#fff;transform-origin:left;transform:scaleX(var(--prog,0));transition:height .15s}
+.slide-bar:hover::before,.slide-bar:hover::after,.slide.scrub .slide-bar::before,.slide.scrub .slide-bar::after{height:6px}
+.slide-time{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);font-size:15px;font-weight:600;font-variant-numeric:tabular-nums;
+  padding:6px 12px;border-radius:999px;background:rgba(0,0,0,.55);opacity:0;transition:opacity .15s;pointer-events:none;white-space:nowrap}
+.slide.scrub .slide-time{opacity:1}
+.slide.scrub .slide-info,.slide.scrub ~ .r-actions{opacity:.25}
+.slide.v .slide-bar{left:50%;right:auto;width:min(100%,calc(100vh*9/16));transform:translateX(-50%)}
+@media (max-aspect-ratio:3/4){.slide.v .slide-bar{left:0;width:100%;transform:none}}
 .slide-pause{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;background:rgba(0,0,0,.35);opacity:0;transition:opacity .2s;pointer-events:none}
 .slide-pause::after{content:"";position:absolute;left:28px;top:22px;border-left:22px solid #fff;border-top:14px solid transparent;border-bottom:14px solid transparent}
 .slide.paused .slide-pause{opacity:1}
